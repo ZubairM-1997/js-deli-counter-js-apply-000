@@ -46,3 +46,30 @@ function currentLine(x) {
 
 
 
+var line = [];
+var ticketvalue = 0
+
+function takeANumber(line){
+ 
+ ticketvalue = ticketvalue + 1 
+ line.push(ticketvalue)
+ return "Welcome! You're ticket number is #" + ticketvalue
+  
+}
+
+takeANumber(line) // "Welcome! You're ticket number #1" [1]
+takeANumber(line) // "Welcome! You're ticket number #2" [1,2]
+
+nowServing(line) // "Currently serving #1" [2]
+nowServing(line) // " Currently serving #2" []
+
+takeANumber(line) // "Welcome! You're ticket number #3" [3]
+
+
+
+
+
+
+
+
+
